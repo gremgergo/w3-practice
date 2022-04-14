@@ -49,6 +49,26 @@ header nav button{
 
     background-color: salmon;
 }
+.image-container{
+    overflow: hidden; /*diven belul marad nem log tul*/
+}
+.image-container img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /*img tag meretet veszi figyelembe*/
+}
+.bg-container{
+    padding: 40px;
+
+    background-image: url("https://codecool.com/wp-content/uploads/2021/09/Home-Header.jpg"); /*ismetlodik alapertelmezettkent ezert norepeate kell ra*/
+    background-size: cover; /*hasonloan mint egy img tag de nem kozepre rendezodik hanem balrol*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /*marad a hatterben es minden mas mozog elotte*/
+}
+.gradient{
+    background-image: linear-gradient(red, blue); /*folyamatosan valtozik a szin prostol kekig*/
+}
 div.first.most-inner{
     border-radius: 50%;
 }
@@ -175,4 +195,9 @@ body > div > div > div > div > div > div > div > div > div > div {
     position: absolute;
     top: 26%;
     left: 25%;
+}
+section{
+    display: flex;
+    width: 40vh;
+    height: 40vh;
 }
